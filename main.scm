@@ -6,19 +6,20 @@
   #:title my-title
   #:css '("/css/main.css")
   (** `(h1 ,my-title)
-	  things-I-have-done
-	  things-I-want-to-do))
+	  `(div ,things-I-have-done)
+	  `(div ,things-I-want-to-do)
+	  `(div ,me-elswhere-on-the-internet)))
 
 (define things-I-have-done
   (**
    '(h2 "Things I have done")
    `(ul
+	 (li "Attended the last " (a ((href "http://superhappydevhouse.org") (target "_blank")) "SHDH") " (Thanks Tom).")
+	 (li "Signed up on the SHDH announce list.")
 	 (li "Created a "
 		 (a ((href "http://github.com") (target "_blank")) "github")
 		 " account and "
 		 (a ((href "http://github.com/ycombinator/personal-web-site/tree/master") (target "_blank")) "my first repository."))
-	 (li "Attended the last " (a ((href "http://superhappydevhouse.org") (target "_blank")) "SHDH") " (Thanks Tom).")
-	 (li "Signed up on the SHDH announce list.")
 	 (li "Dusted off my old linux box and got it running again.")
 	 (li "Installed "
 		 (a ((href "http://www.plt-scheme.org/software/mzscheme/") (target "_blank")) "mzscheme")
@@ -31,5 +32,12 @@
    '(h2 "Things I want to do")
    '(ul (li "Attend the next SHDH.")
 	   (li "Keep adding to this page."))))
+
+(define me-elswhere-on-the-internet
+  (**
+   '(h2 "Me, elsewhere on the Internet")
+   '(ul
+	 (li (a ((href "http://flickr.com/photos/25445776@N08/") (target "_blank")) "Flickr."))
+	 (li (a ((href "http://twitter.com/shaunak") (target "_blank")) "Twitter.")))))
 
 (define my-title "Shaunak's home on the Internet")
