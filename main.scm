@@ -12,7 +12,10 @@
   (**
    '(h2 "Things I have done")
    `(ul
-	 (li "Created a " (a ((href "http://github.com") (target "_blank")) "github") " account.")
+	 (li "Created a "
+		 (a ((href "http://github.com") (target "_blank")) "github")
+		 " account and "
+		 (a ((href "http://github.com/ycombinator/personal-web-site/tree/master") (target "_blank")) "my first repository."))
 	 (li "Attended the last " (a ((href "http://superhappydevhouse.org") (target "_blank")) "SHDH") " (Thanks Tom).")
 	 (li "Signed up on the SHDH announce list.")
 	 (li "Dusted off my old linux box and got it running again.")
