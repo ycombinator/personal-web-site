@@ -4,6 +4,7 @@
 
 (define-page (index-page req)
   #:title my-title
+  #:css '("/css/main.css")
   (** `(h1 ,my-title)
 	  things-I-have-done
 	  things-I-want-to-do))
