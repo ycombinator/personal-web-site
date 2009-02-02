@@ -6,9 +6,9 @@
   #:title my-title
   #:css '("/css/main.css")
   (** `(h1 ,my-title)
-	  `(div ,things-I-have-done)
-	  `(div ,things-I-want-to-do)
-	  `(div ,me-elswhere-on-the-internet)))
+	  `(div ((id "things_done")) ,things-I-have-done)
+	  `(div ((id "things_todo")) ,things-I-want-to-do)
+	  `(div ((id "me")) ,me-elswhere-on-the-internet)))
 
 (define things-I-have-done
   (**
@@ -38,6 +38,7 @@
    '(h2 "Me, elsewhere on the Internet")
    '(ul
 	 (li (a ((href "http://flickr.com/photos/25445776@N08/") (target "_blank")) "Flickr."))
-	 (li (a ((href "http://twitter.com/shaunak") (target "_blank")) "Twitter.")))))
+	 (li (a ((href "http://twitter.com/shaunak") (target "_blank")) "Twitter."))
+	 (li (a ((href "http://news.yahoo.com") (target "_blank")) "My day job.")))))
 
 (define my-title "Shaunak's home on the Internet")
