@@ -1,9 +1,15 @@
 <!--
 
+body {
+	margin-left: 22%;
+	margin-right: 22%;
+}
+
 h1 {
+	margin-top: 40px;
 	font-family: "Arial", Verdana, sans-serif;
 	font-size: 3em;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 h2 {
@@ -15,6 +21,10 @@ h2 {
 div {
 	float: left;
 	margin-right: 30px;
+}
+
+#me {
+	clear: both;
 }
 
 li, ul {
